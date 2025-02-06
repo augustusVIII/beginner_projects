@@ -6,5 +6,6 @@ should_we_play = input("Do you want to play?: ")
 play = should_we_play == "yes"
 
 if (play):
-    print
-
+    print("We will play")
+else:
+    print("We won't play")
