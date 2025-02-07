@@ -1,11 +1,28 @@
 
 # Can lay 3 thu: 2 con so va 1 phep toan
 
-number1 = input("please type the 1st number: ")
-number2 = input("please type the 2nd number: ")
+
+
+#vong lap cua try and except: break la de pha vo vong lap khi dieu kien da duoc dat den
+
+
+while True:
+        number1 = input("type in number 1: ")
+        try:
+            number1 = float(number1)
+            break
+        except:
+            print("You are not typing a number, please try again")
+
+while True:
+        number2 = input("type in number 2: ")
+        try:
+            number2 = float(number2)
+            break
+        except:
+            print("You are not typing a number, please try again")
+
 ar_ops = input("please type in an arithmetic operator: ")
-
-
 
 #tinh toan phep tinh do
 
@@ -20,14 +37,3 @@ elif ar_ops == "*":
     result = float(number1) * float(number2)
 print("your result is: ", result)
 
-#Dinh nghia 1 ham sao cho no lam cong viec try and except
-
-def check():
-    try:
-        number1 == float(number1)
-        return True
-    except:
-        print("You are not typing a number, please try again")
-        return False
-while True:
-    check()
